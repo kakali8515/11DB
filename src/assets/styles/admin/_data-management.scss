@@ -1,0 +1,70 @@
+.table-otr {
+    &.schema-table {
+        td {
+            width: calc(100% / 4);
+            padding: 10px 15px;
+            &:first-child {
+                width: calc(100% / 4);
+            }
+        }
+    }
+    tr {
+        td {
+            .form-control {
+                max-width: 160px;
+                padding: 12px;
+                border: 1px solid $gray5;
+                border-radius: 4px;
+                background: $blackff;
+                color: $white-11;
+                font-size: 14px;
+                font-weight: 500;
+                height: 36px;
+                &::placeholder {
+                    color: $white-11;
+                    opacity: 1;
+                }
+            }
+            select {
+                &.form-control {
+                    background: url(@/assets/icons/down-arrow-black.svg) no-repeat;
+                    background-size: auto;
+                    background-position: right 15px center;
+                    min-width: 160px;
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+}
+.schema-select {
+    text-align: right;
+    margin-bottom: 20px;
+    .frm-innr {
+        max-width: 100%;
+        .form-group {
+            .form-control {
+                width: 200px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+.tab-outr {
+    &.admin-tab {
+        .tabs-header {
+            border-bottom-width: 1px;
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.btn-group {
+    &.mtt-30 {
+        margin-top: 30px;
+    }
+}

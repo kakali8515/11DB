@@ -1,0 +1,37 @@
+.btn {
+    cursor: pointer;
+    &.or-btn {
+        border-width: 1px;
+        padding: 12px 30px;
+        min-width: 114px;
+        border-color: $red1;
+        color: $red1;
+        border-width: 1px;
+        background: transparent;
+        border-radius: 100px;
+        &:hover {
+            color: $blackff;
+            border-color:  $blackff;
+        }
+    }
+    &.org-btn {
+        padding: 12px 30px;
+        min-width: 114px;
+        background: $red1;
+        color: $blackff;
+        &:hover {
+            color: $blackff;
+        }
+    }
+    &.blk-btn {
+        border-width: 1px;
+        border-style: solid;
+        padding: 12px 30px;
+        min-width: 114px;
+        color: $white-11;
+        border-color: $white-11;
+        &:hover {
+            color: $blackff;
+        }
+    }
+}

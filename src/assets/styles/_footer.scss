@@ -1,0 +1,215 @@
+.footer {
+    padding: 60px 0;
+    @media (max-width: 767px) {
+        padding: 48px 0;
+    }
+    .footer-otr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+    .footer-left {
+        display: flex;
+        img {
+            @media (max-width: 767px) {
+                width: 90px;
+            }
+        }
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &.admin-view-foter{
+      background: none !important;
+      border-top: 1px solid rgba(34, 34, 34, 0.06);
+      margin-top: 30px;
+    }
+}
+.footer-menu {
+    margin-left: 165px;
+    @media (max-width: 991px) {
+        margin-left: 100px;
+    }
+    @media (max-width: 767px) {
+        margin-left: 0;
+        margin-bottom: 31px;
+        margin-top: 32px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        li {
+            margin-right: 36px;
+            @media (max-width: 575px) {
+                margin-right: 15px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                transition: all 0.6s;
+                @media (max-width: 575px) {
+                    font-size: 12px;
+                }
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    p {
+        letter-spacing: 0.03em;
+        font-weight: 500;
+        font-size: 12px;
+        @media (max-width: 575px) {
+            font-size: 8px;
+        }
+    }
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 44px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+  }
+  
+/* The slider */
+.slider-in {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.round {
+        border-radius: 34px;
+        &::before {
+            border-radius: 50%;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        height: 36px;
+        width: 36px;
+        right: 5px;
+        left: auto;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        transition: 0.4s;
+        border: 1px solid #E0E0E0;
+        background: #fff url(@/assets/icons/night.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+  }
+ 
+  .theme-light {
+    .slider-in {
+        &:before {
+            transform: translateX(-87px);
+            background: white url(@/assets/icons/day.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+      }
+  }
+  
+  .switch-txt {
+    position: absolute;
+    z-index: 99;
+    font-weight: 600;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+    &.dark1 {
+        left: 0;
+        padding-left: 9px;
+        right: auto;
+    }
+    &.light1{
+        right: 0;
+        padding-right: 9px;
+        left: auto;
+        display: none;
+    }
+  }
+ 
+
+ .theme-light .dark1 {
+    display: none;
+  }
+  .theme-light .light1 {
+    display: block;
+  }
+  .theme-btn {
+    @media (max-width: 767px) {
+        text-align: right;
+    }
+  }
+
+  .add-new-movie .new-container .search-section .search-form .select-option .select-style option{
+    background-color: #111;
+    color: #fff;
+  }
+
+  .login-wrap .box .form-group select option{
+    background-color: #111;
+    color: #fff !important;
+  }
+
+  .theme-light .login-wrap .box .form-group select option{
+    background-color: #fff;
+    color: #111 !important;
+  }
+
+  .theme-light .add-new-movie .new-container .search-section .search-form .select-option .select-style option{
+    background-color: #fff;
+    color: #111;
+  }
+
+  .mar32{
+    margin-bottom: 32px;
+  }
+
+//   .movies-sec .movies-main .filters .list-common .filter-drop-innr .filter-drop-left ul{
+//     @media screen and (max-width:768px){
+//         gap: 12px 6px !important;        
+//     }
+//   }
+
+  .add-new-movie .new-container .filter-section .select-option .select-style option{
+    background-color: #111;
+    color: #fff !important;
+  }
+
+  .theme-light .add-new-movie .new-container .filter-section .select-option .select-style option{
+    background-color: #fff;
+    color: #111 !important;
+  }
+
+  .active-footer {
+    color: #c32d2c !important;
+  }
