@@ -1,0 +1,4064 @@
+.body {
+  @include customize(theme) {
+    background-color: getValue(darkGray-fa);
+  }
+}
+.footer {
+  @include customize(theme) {
+    background-color: getValue(black-ff);
+  }
+}
+
+.footer-menu {
+  ul {
+    li {
+      a {
+        &:hover {
+          @include customize(theme) {
+            color: getValue(red0);
+          }
+        }
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(gray11);
+    }
+  }
+}
+
+.slider-in {
+  @include customize(theme) {
+    background-color: getValue(switch);
+  }
+}
+.switch-txt {
+  @include customize(theme) {
+    color: getValue(switchText);
+    // color: #131620;
+  }
+}
+/* Start Header */
+header {
+  @include customize(theme) {
+    background-color: getValue(black-ff);
+  }
+  .link,
+  .sub-menu {
+    @include customize(theme) {
+      background-color: getValue(black-ff);
+    }
+    a {
+      &:hover {
+        @include customize(theme) {
+          color: getValue(red1);
+        }
+      }
+    }
+  }
+  .right-side {
+    a {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+
+    .menu-links {
+      .main-menu {
+        .menu-item {
+          &.active {
+            .head-link {
+              &:after {
+                @include customize(theme) {
+                  background-color: getValue(red0);
+                }
+              }
+              @include customize(theme) {
+                color: getValue(red0);
+              }
+            }
+          }
+          .head-link {
+            &:after {
+              @include customize(theme) {
+                background-color: getValue(red0);
+              }
+            }
+          }
+          &:hover {
+            .head-link {
+              @include customize(theme) {
+                color: getValue(red0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.myClass {
+  .head-link {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+    &:after {
+      content: "";
+      @include customize(theme) {
+        background-color: getValue(red0);
+      }
+    }
+  }
+}
+.dropdown-search {
+  @include customize(theme) {
+    border-top: 1px solid getValue(gray5);
+  }
+  .search-form {
+    @include customize(theme) {
+      background-color: getValue(black-ff);
+    }
+    input {
+      @include customize(theme) {
+        color: getValue(logo);
+      }
+      @include customize(theme) {
+        background-color: getValue(black-ff);
+      }
+    }
+  }
+  ul {
+    li {
+      @include customize(theme) {
+        border-bottom: 1px solid getValue(bluishGray1);
+      }
+
+      a {
+        span {
+          @include customize(theme) {
+            color: getValue(red0);
+          }
+        }
+        @include customize(theme) {
+          color: getValue(gray5);
+        }
+      }
+    }
+  }
+}
+/* End Header */
+
+h2 {
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+}
+.login-wrap {
+  .box {
+    p {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+    .form-group {
+      &.error {
+        .form-control {
+          @include customize(theme) {
+            border-color: getValue(red1);
+          }
+        }
+      }
+      .error-txt {
+        @include customize(theme) {
+          color: getValue(red1);
+        }
+      }
+      .form-control {
+        @include customize(theme) {
+          border: 1px solid getValue(gray5);
+          color: getValue(white-11);
+        }
+      }
+      // select {
+      //     option {
+      //         @include customize(theme) {
+      //             color:  getValue(black-ff);
+      //         }
+      //     }
+      // }
+    }
+    .frgt-txt {
+      &:hover {
+        @include customize(theme) {
+          color: getValue(red0);
+        }
+      }
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    .chr-txt {
+      @include customize(theme) {
+        color: getValue(gray3);
+      }
+    }
+    .btm-txt {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+    .time {
+      @include customize(theme) {
+        color: getValue(red1);
+      }
+    }
+  }
+}
+
+/* Start Home */
+.banner {
+  .banner-content {
+    .news-content {
+      .news-right {
+        @include customize(theme) {
+          background-color: getValue(black-ff);
+        }
+        span {
+          @include customize(theme) {
+            color: getValue(blue2);
+          }
+        }
+        a {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+          &:hover {
+            @include customize(theme) {
+              color: getValue(blue2);
+            }
+          }
+        }
+        .p-txt {
+          @include customize(theme) {
+            color: getValue(gray10);
+          }
+        }
+        .news-date {
+          @include customize(theme) {
+            border-top-color: getValue(gray3);
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+        }
+      }
+    }
+    .banner-tabs {
+      .lists {
+        .list-content {
+          span {
+            @include customize(theme) {
+              color: getValue(blue2);
+            }
+          }
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+            &:hover {
+              @include customize(theme) {
+                color: getValue(blue2);
+              }
+            }
+          }
+        
+         
+        }
+      }
+    }
+  }
+}
+.common-section {
+  .trending-content {
+    .trending-tabs {
+      .lists {
+        .list-content {
+          p {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hot-videos {
+  .hot-lists {
+    a,
+    .vd-innr-content {
+      p {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+}
+.real-time {
+  .real-time-content {
+    ul {
+      li {
+        @include customize(theme) {
+          border-top: 1px solid getValue(bluishGray1);
+        }
+        &:last-child {
+          @include customize(theme) {
+            border-bottom: 1px solid getValue(bluishGray1);
+          }
+        }
+        .right-content {
+          .comment {
+            @include customize(theme) {
+              background-color: #41444C;
+            }
+            @include customize(theme) {
+              color: getValue(colorF2);
+            }
+          }
+          .comment-name {
+            h3 {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            p {
+              @include customize(theme) {
+                color: #E0E0E0;
+              }
+              span {
+                @include customize(theme) {
+                  border-left: 1px solid getValue(gray5);
+                }
+              }
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray8);
+            }
+          }
+          .user-name {
+            p {
+              @include customize(theme) {
+                color: getValue(gray5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.common-shows {
+  .common-content {
+    .common-tabs {
+      .lists {
+        .outerside {
+          .list-content {
+            .pop-count {
+              h4 {
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+              .list-number{
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+              span {
+                h3 {
+                  @include customize(theme) {
+                    color: getValue(white-11);
+                  }
+                }
+                p {
+                  @include customize(theme) {
+                    color: getValue(gray5);
+                  }
+                  span {
+                    &::before {
+                      @include customize(theme) {
+                        background-color: getValue(white-11);
+                      }
+                    }
+                  }
+                }
+                .startxt {
+                  span {
+                    @include customize(theme) {
+                      color: getValue(red0);
+                    }
+                  }
+                }
+              }
+            }
+            
+            .news-date {
+              @include customize(theme) {
+                border-top: 1px solid #A4A4A4;
+              }
+              p {
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+              span {
+                &::before {
+                  @include customize(theme) {
+                    background-color: getValue(white-11);
+                  }
+                }
+              }
+              .newstatus {
+                @include customize(theme) {
+                  background-color: getValue(bluishGray1);
+                }
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+            }
+          }
+        }
+        // .more-content {
+        // }
+      }
+    }
+  }
+}
+.born-today {
+  h2 {
+    span {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+  }
+  ul {
+    li {
+      p {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+}
+/* End Home */
+
+/* Start About us */
+.about-us {
+  .about-content {
+    p {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+/* End About us */
+
+/* Start Search */
+.search-results {
+  .search-main {
+    .search-left {
+      @include customize(theme) {
+        background-color: getValue(black-ff);
+        border: 1px solid getValue(bluishGray1);
+      }
+      ul {
+        li {
+          a {
+            @include customize(theme) {
+              color: getValue(gray4);
+            }
+          }
+          span {
+            @include customize(theme) {
+              color: getValue(gray5);
+              background-color: getValue(gray2);
+            }
+          }
+          &.active {
+            a {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+
+            span {
+              @include customize(theme) {
+                color: getValue(orBtnColor);
+                background-color: getValue(red1);
+              }
+            }
+          }
+        }
+      }
+    }
+    .search-right {
+      .filters {
+        h3 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+        span {
+          a {
+            &::before {
+              @include customize(theme) {
+                background-color: getValue(gray5);
+              }
+            }
+            @include customize(theme) {
+              color: getValue(gray5);
+            }
+            &.active {
+              @include customize(theme) {
+                color: getValue(blue2);
+              }
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          @include customize(theme) {
+            border-top: 1px solid getValue(bluishGray1);
+          }
+          &:last-child {
+            @include customize(theme) {
+              border-bottom: 1px solid getValue(bluishGray1);
+            }
+          }
+          a {
+            .main-dta {
+              span {
+                h4 {
+                  @include customize(theme) {
+                    color: getValue(white-11);
+                  }
+                }
+                p {
+                  @include customize(theme) {
+                    color: getValue(gray8);
+                  }
+                }
+              }
+              .status {
+                span {
+                  @include customize(theme) {
+                    background-color: getValue(colorCE);
+                    color: getValue(orBtnColor);
+                  }
+                }
+                p {
+                  @include customize(theme) {
+                    color: getValue(gray5);
+                  }
+                }
+              }
+              .p-content {
+                @include customize(theme) {
+                  background-color: getValue(listBackground);
+                }
+                p {
+                  @include customize(theme) {
+                    color: getValue(gray8);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .video-content {
+        @include customize(theme) {
+          border-top: 1px solid getValue(gray5);
+        }
+        a {
+          span {
+            .play-btn {
+              p {
+                @include customize(theme) {
+                  color: getValue(orBtnColor);
+                }
+              }
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray5);
+            }
+          }
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+          .news-date {
+            @include customize(theme) {
+              border-top: 1px solid getValue(gray5);
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            span {
+              &::before {
+                @include customize(theme) {
+                  background-color: getValue(white-11);
+                }
+              }
+            }
+          }
+        }
+      }
+      .search-video {
+        h4 {
+          span {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+        }
+        .p-content {
+          ul {
+            li {
+              @include customize(theme) {
+                color: getValue(gray8);
+              }
+            }
+          }
+        }
+      }
+      .tag-filter {
+        @include customize(theme) {
+          border-bottom: 1px solid getValue(bluishGray1);
+        }
+      }
+      .tag-list {
+        li {
+          a {
+            @include customize(theme) {
+              border: 1px solid getValue(bluishGray2);
+              color: getValue(bluishGray3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tag-details {
+  .tagdetail-content {
+    .tab-outr {
+      .tabs-header {
+        @include customize(theme) {
+          border: 1px solid getValue(bluishGray1);
+          background-color: getValue(black-ff);
+        }
+
+        li {
+          
+          @include customize(theme) {
+            border: 1px solid getValue(gray6);
+            color: getValue(gray6);
+          }
+          
+          &.active {
+            @include customize(theme) {
+              background-color: getValue(white-11);
+              color: getValue(gray2);
+            }
+          }
+        }
+      }
+    }
+    // .alltabs{
+    //     @include customize(theme){
+    //         border: 1px solid getValue(bluishGray1);
+    //         background-color:getValue(black-ff);
+    //     }
+    //     a{
+    //         @include customize(theme){
+    //             border: 1px solid getValue(gray6);
+    //             color:getValue(gray6);
+    //         }
+    //         &.active{
+    //             @include customize(theme){
+    //                 background-color:getValue(white-11);
+    //                 color:getValue(gray2);
+    //             }
+    //         }
+
+    //     }
+    // }
+    .tags-list {
+      li {
+        @include customize(theme) {
+          border-top: 1px solid getValue(bluishGray1);
+        }
+        &:last-child {
+          @include customize(theme) {
+            border-bottom: 1px solid #CCCCCE;
+          }
+        }
+        a {
+          .main-dta {
+            span {
+              h4 {
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+              p {
+                @include customize(theme) {
+                  color: getValue(gray8);
+                }
+              }
+            }
+            .status {
+              span {
+                @include customize(theme) {
+                  background-color: getValue(bluishGray1);
+                  color: getValue(white-11);
+                }
+              }
+              p {
+                @include customize(theme) {
+                  color: getValue(gray5);
+                }
+              }
+            }
+            .p-content {
+              p {
+                @include customize(theme) {
+                  color: getValue(gray8);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Search */
+
+/* Start Awards */
+.award-popular {
+  .awards-list {
+    a {
+      .award-right-content {
+        h3 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+        .award-detail {
+          .inner {
+            span {
+              @include customize(theme) {
+                color: getValue(gray6);
+              }
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(gray8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Start AwardsDetail*/
+.award-details-sec {
+  &::after {
+    @include customize(theme) {
+      background: getValue(gradColor);
+    }
+  }
+}
+.award-dtl-right {
+  ul {
+    li {
+      @include customize(theme) {
+        border-right-color: getValue(gray5);
+        color: getValue(white-11);
+      }
+    }
+  }
+  .startxt {
+    span {
+      @include customize(theme) {
+        color: getValue(red0);
+      }
+    }
+  }
+}
+.award-date-list {
+  ul {
+    li {
+      &:after {
+        @include customize(theme) {
+          background: getValue(gray5);
+        }
+      }
+    }
+  }
+}
+// .award-list-outr {
+//   @include customize(theme) {
+//     background: getValue(bckColor);
+//   }
+// }
+.summary-content {
+  h5 {
+    @include customize(theme) {
+      color: getValue(gray4);
+    }
+  }
+  .summary-inner {
+    p,
+    .a-link {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    a {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+  }
+}
+/* End AwardsDetail*/
+.prize-main {
+  .prize-col {
+    .left-side {
+      .prize-list-detail {
+        li {
+          .p-heading {
+            @include customize(theme) {
+              border-bottom: 1px solid getValue(bluishGray1);
+            }
+            h3 {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+          .movie-detail {
+            @include customize(theme) {
+              background-color: getValue(backcolor);
+            }
+            span {
+              @include customize(theme) {
+                background-color: getValue(gray1);
+              }
+              p {
+                @include customize(theme) {
+                  color: getValue(red1);
+                }
+              }
+            }
+            h3 {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(gray5);
+              }
+            }
+          }
+          .nominee-content {
+            h4 {
+              @include customize(theme) {
+                color: getValue(gray5);
+              }
+            }
+            ul {
+              li {
+                &::before {
+                  @include customize(theme) {
+                    color: getValue(gray8);
+                  }
+                }
+                p {
+                  @include customize(theme) {
+                    color: getValue(gray8);
+                  }
+                }
+                span {
+                  @include customize(theme) {
+                    color: getValue(gray6);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      @include customize(theme) {
+        border-left: 1px solid getValue(gray3);
+      }
+
+      .left-lists {
+        .list-content {
+          span {
+            @include customize(theme) {
+              color: getValue(blue2);
+            }
+          }
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+          .p-txt {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+
+          .news-date {
+            @include customize(theme) {
+              border-top: 1px solid getValue(gray3);
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(gray6);
+              }
+            }
+          }
+        }
+      }
+      button {
+        @include customize(theme) {
+          border: 1px solid getValue(white-11);
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+}
+/* End Awards*/
+
+/* Start Movies */
+.movies-sec {
+  .movies-main {
+    .filters {
+      @include customize(theme) {
+        background-color: getValue(black-ff);
+        border: 1px solid getValue(bluishGray1);
+      }
+      .lists-tag {
+        span {
+          a {
+            @include customize(theme) {
+              color: getValue(white-11);
+              border-right: 1px solid getValue(gray5);
+            }
+            &.active-red {
+              @include customize(theme) {
+                color: getValue(red1);
+              }
+            }
+          }
+        }
+        .btn {
+          &.unable {
+            @include customize(theme) {
+              background-color: getValue(SearchBtn);
+              color: getValue(gray3);
+            }
+          }
+        }
+      }
+      .list-common {
+        @include customize(theme) {
+          border-top: 1px solid getValue(bluishGray1);
+        }
+        .dropdown {
+          label {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+            &::before {
+              @include customize(theme) {
+                background-color: getValue(white-11);
+              }
+            }
+          }
+          .item-selector {
+            @include customize(theme) {
+              color: getValue(white-11);
+              border: 1px solid getValue(gray5);
+            }
+            option {
+              @include customize(theme) {
+                background-color: getValue(black-ff);
+                border: 1px solid getValue(gray5);
+                border-bottom: 1px solid getValue(gray5);
+              }
+            }
+            span {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+          .tags-show {
+            span {
+              @include customize(theme) {
+                color: getValue(gray6);
+                border: 1px solid getValue(gray6);
+              }
+            }
+          }
+        }
+      }
+      // .tag-list {
+      // }
+      // .filter-list {
+      // }
+    }
+    .moives-list {
+      .outerside {
+        .list-content {
+          .pop-count {
+            h4 {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            span {
+              h3 {
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+              p {
+                @include customize(theme) {
+                  color: getValue(gray5);
+                }
+                span {
+                  &::before {
+                    @include customize(theme) {
+                      background-color: getValue(white-11);
+                    }
+                  }
+                }
+              }
+              .startxt {
+                span {
+                  @include customize(theme) {
+                    color: getValue(red0);
+                  }
+                }
+              }
+            }
+          }
+          // span {
+          // }
+          .news-date {
+            @include customize(theme) {
+              border-top: 1px solid getValue(gray3);
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            span {
+              &::before {
+                @include customize(theme) {
+                  background-color: getValue(white-11);
+                }
+              }
+            }
+            .newstatus {
+              @include customize(theme) {
+                background-color: getValue(bluishGray1);
+              }
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Start Movies Details*/
+.movies-details-sec {
+  .startxt {
+    span {
+      @include customize(theme) {
+        color: getValue(red0);
+      }
+    }
+  }
+}
+.movie-detail-list {
+  li {
+    span {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    a {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.movies-details-btm-sec {
+  .people-details-btm-otr {
+    .people-details-btm-left {
+      .lists {
+        .list-content {
+          span {
+            @include customize(theme) {
+              color: getValue(blue2);
+            }
+          }
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+            &:hover {
+              @include customize(theme) {
+                color: getValue(blue2);
+              }
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+          .news-date {
+            @include customize(theme) {
+              border-top: 1px solid getValue(gray3);
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+        }
+      }
+      .detail-lst {
+        li {
+          span {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+        }
+      }
+    }
+    .people-details-btm-right {
+      .social-icon-list {
+        flex-direction: column;
+        li {
+          span {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.theme-dark{
+  .list-no-data{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+.theme-light{
+  .list-no-data{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* End Movies Details*/
+
+/* Start Tvshows Details*/
+.tvshows-details-sec {
+  .startxt {
+    span {
+      @include customize(theme) {
+        color: getValue(red0);
+      }
+    }
+  }
+}
+.movie-detail-list {
+  li {
+    span {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.tvshows-details-btm-sec {
+  .people-details-btm-otr {
+    .people-details-btm-left {
+      .lists {
+        .list-content {
+          span {
+            @include customize(theme) {
+              color: getValue(blue2);
+            }
+          }
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+            &:hover {
+              @include customize(theme) {
+                color: getValue(blue2);
+              }
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+          .news-date {
+            @include customize(theme) {
+              border-top: 1px solid getValue(gray3);
+            }
+            p {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+        }
+      }
+      .detail-lst {
+        li {
+          span {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+        }
+      }
+    }
+    .people-details-btm-right {
+      .social-icon-list {
+        flex-direction: column;
+        li {
+          span {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Start TvShowsDetailsEpisodes */
+.tvshow-episodes-banner {
+  &:after {
+    @include customize(theme) {
+      background-color: getValue(gradColor);
+    }
+  }
+  .banner-content {
+    .left-content {
+      h3 {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+        span {
+          @include customize(theme) {
+            background-color: getValue(listBackground);
+            color: getValue(white-11);
+          }
+        }
+      }
+      a {
+        @include customize(theme) {
+          color: getValue(gray5);
+        }
+      }
+    }
+  }
+}
+
+.tvepisodes-btm {
+  .tvepisodes-content {
+    .top-head {
+      a {
+        @include customize(theme) {
+          background-color: getValue(white-11);
+          color: getValue(gray1);
+        }
+      }
+    }
+    .tv-lists {
+      .tv-content {
+        @include customize(theme) {
+          border-bottom: 1px solid getValue(bluishGray1);
+        }
+        .left-content {
+          .tv-heading {
+            h3 {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            span {
+              @include customize(theme) {
+                color: getValue(gray6);
+              }
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(gray5);
+            }
+          }
+          a {
+            @include customize(theme) {
+              color: getValue(bluishGray2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.tvimage-otr {
+  .image-innr {
+    p {
+      @include customize(theme) {
+        color: getValue(white-ff);
+      }
+    }
+    .sub-para {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+  }
+}
+.a-lists {
+  .awards-lists {
+    @include customize(theme) {
+      border-top: 1px solid getValue(bluishGray1);
+    }
+    h2 {
+      @include customize(theme) {
+        color: getValue(white-ff);
+      }
+    }
+    .a-content {
+      ul {
+        li {
+          .label-txt {
+            @include customize(theme) {
+              color: getValue(gray6);
+            }
+          }
+          p {
+            @include customize(theme) {
+              color: getValue(white-ff);
+            }
+            span {
+              @include customize(theme) {
+                color: getValue(red1);
+                background-color: getValue(gray1);
+              }
+            }
+          }
+        }
+      }
+      .show-more,
+      .show-less {
+        @include customize(theme) {
+          color: getValue(bluishGray2);
+        }
+      }
+    }
+  }
+}
+/* End TvShowsDetailsEpisodes */
+
+/* End Tvshows Details*/
+
+/* End Movies */
+
+.btn {
+  &.outline {
+    &:hover {
+      @include customize(theme) {
+        border-color: getValue(red0);
+      }
+    }
+    &.red {
+      &:hover {
+        @include customize(theme) {
+          color: getValue(orBtnColor);
+        }
+      }
+      @include customize(theme) {
+        border-color: getValue(red1);
+        color: getValue(red1);
+      }
+    }
+    @include customize(theme) {
+      border-color: getValue(white-11);
+      color: getValue(white-11);
+    }
+  }
+  &.verify-btn {
+    &.resend {
+      @include customize(theme) {
+        background: getValue(white-11);
+        color: getValue(bluishBlack);
+      }
+    }
+    &:hover {
+      @include customize(theme) {
+        color: getValue(white-11);
+        background-color: getValue(red0);
+      }
+    }
+    @include customize(theme) {
+      background: getValue(gray1);
+      color: getValue(gray3);
+      color: #C7C7C7;
+    }
+  }
+  &.orange-btn {
+    &:hover {
+      @include customize(theme) {
+        color: getValue(orBtnColor);
+      }
+    }
+    @include customize(theme) {
+      background: getValue(red1);
+      color: getValue(orBtnColor);
+    }
+  }
+  &.gray-btn {
+    @include customize(theme) {
+      background-color: getValue(gray1);
+      color: getValue(gray3);
+    }
+  }
+  &:hover {
+    @include customize(theme) {
+      color: getValue(white-11);
+      background-color: getValue(red0);
+    }
+  }
+  @include customize(theme) {
+    color: getValue(red0);
+    background-color: getValue(white-11);
+  }
+}
+.divider {
+  @include customize(theme) {
+    // border-top: 1px solid getValue(bluishGray1);
+    border-top: 1px solid #41444C;
+  }
+}
+.tab-outr {
+  .tabs-header {
+    @include customize(theme) {
+      border-bottom-color: #666;
+    }
+    li {
+      &.active {
+        @include customize(theme) {
+          color: getValue(red0);
+        }
+      }
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+      padding: 8px 16px !important;
+      &::after {
+        @include customize(theme) {
+          background: getValue(red0);
+        }
+      }
+    }
+  }
+  &.tab-style {
+    .tabs-otr {
+      @include customize(theme) {
+        border-color: #CCCCCE;
+        background: getValue(black-ff);
+      }
+    }
+    .tabs-header {
+      li {
+        &.active {
+          @include customize(theme) {
+            color: getValue(gray2);
+            background: getValue(white-11);
+            border-color: #e0e0e0;
+          }
+        }
+        @include customize(theme) {
+          border-color: #BDBDBD;
+          color: #BDBDBD;
+        }
+      }
+    }
+  }
+  .tab-content {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.mypage-sec {
+  @include customize(theme) {
+    background: getValue(black-ff);
+  }
+}
+.mypage-left {
+  @include customize(theme) {
+    background: getValue(darkGray-fa);
+    border-color: #CCCCCE;
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  .lv {
+    @include customize(theme) {
+      color: getValue(gray3);
+    }
+  }
+  .points {
+    @include customize(theme) {
+      background: getValue(black-ff);
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(blue2);
+      }
+    }
+  }
+  .mypage-list {
+    li {
+      &.active,
+      &:hover {
+        a {
+          span {
+            @include customize(theme) {
+              background: getValue(red1);
+            }
+          }
+          @include customize(theme) {
+            color: #C7C7C7;
+          }
+        }
+      }
+      a {
+        span {
+          @include customize(theme) {
+            background: getValue(gray3);
+          }
+        }
+        @include customize(theme) {
+          color: getValue(gray3);
+        }
+      }
+    }
+  }
+}
+
+.message-list {
+  li,
+  .message-list-item {
+    &.br {
+      @include customize(theme) {
+        border-color: getValue(darkGray-fa);
+      }
+    }
+    @include customize(theme) {
+      background: getValue(darkGray-fa);
+    }
+    .admin-name {
+      span {
+        @include customize(theme) {
+          background: getValue(circleColor);
+        }
+      }
+      h4 {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+    .admin-txt {
+      padding-left: 20px;
+      p {
+        color: #c7c7c7 !important;
+        &.gray {
+          @include customize(theme) {
+            color: getValue(gray3);
+          }
+        }
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+        span {
+          &.red {
+            @include customize(theme) {
+              background: getValue(red0);
+            }
+          }
+          &.blue {
+            @include customize(theme) {
+              background: getValue(blue2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.date {
+  span {
+    @include customize(theme) {
+      border-color: getValue(gray5);
+      color: getValue(gray5);
+    }
+  }
+}
+
+.dtl-box {
+  @include customize(theme) {
+    border-color: getValue(black-ff);
+    background: getValue(darkGray-fa);
+  }
+  span {
+    @include customize(theme) {
+      color: getValue(blue3);
+    }
+  }
+  h4 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  p {
+    @include customize(theme) {
+      background: getValue(black-ff);
+      color: getValue(white-11);
+    }
+  }
+}
+.send-box-input {
+  input {
+    @include customize(theme) {
+      color: getValue(white-11);
+      border-color: getValue(white-11);
+    }
+    &::placeholder {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+  }
+}
+
+.comm-list {
+  li {
+    @include customize(theme) {
+      border-bottom-color: getValue(bluishGray1);
+    }
+  }
+}
+.c-hdr {
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+  a {
+    &:hover {
+      @include customize(theme) {
+        color: getValue(blue2);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  span {
+    @include customize(theme) {
+      color: getValue(gray3);
+    }
+  }
+}
+.right {
+  .date {
+    span {
+      @include customize(theme) {
+        color: #E0E0E0;
+        border-right-color: getValue(gray5);
+      }
+    }
+  }
+}
+.comm-txt {
+  p {
+    background: #fafafa !important;
+    &.para-clr {
+      @include customize(theme) {
+        background: getValue(gray1);
+      }
+    }
+    @include customize(theme) {
+      background: getValue(darkGray-fa);
+      color: getValue(gray8);
+    }
+  }
+  h5 {
+    @include customize(theme) {
+      border-color: getValue(bluishGray1);
+      color: getValue(gray3);
+    }
+    span {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+  }
+  .like {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+  }
+  .innr-list {
+    @include customize(theme) {
+      background: getValue(darkGray-fa);
+    }
+    li {
+      &:after {
+        @include customize(theme) {
+          background: getValue(gray8);
+        }
+      }
+      @include customize(theme) {
+        color: getValue(gray8);
+      }
+    }
+  }
+}
+.no-data {
+  p {
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+}
+.rating {
+  ul {
+    li {
+      @include customize(theme) {
+        color: getValue(red0);
+      }
+    }
+  }
+}
+.media-innr {
+  h5 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(orBtnColor);
+    }
+  }
+}
+.image-innr {
+  p {
+    &.sub-para {
+      @include customize(theme) {
+        color: getValue(gray3);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.form-box {
+  @include customize(theme) {
+    background: getValue(darkGray-fa);
+  }
+  label {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.radio-otr {
+  label {
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+}
+.b-txt {
+  @include customize(theme) {
+    color: getValue(gray5);
+  }
+}
+.radio-input {
+  .checkmark {
+    &::after {
+      @include customize(theme) {
+        background: getValue(white-11);
+      }
+    }
+    @include customize(theme) {
+      border-color: getValue(white-11);
+    }
+  }
+}
+.file-txt {
+  @include customize(theme) {
+    background: getValue(gray1);
+  }
+  span {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.my-accout-box {
+  @include customize(theme) {
+    border-color: getValue(bluishGray1);
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+  ul {
+    @include customize(theme) {
+      background: getValue(black-ff);
+    }
+    li {
+      @include customize(theme) {
+        color: getValue(gray4);
+      }
+    }
+  }
+}
+.mypage-list {
+  @include customize(theme) {
+    border-color: getValue(gray3);
+  }
+}
+.act-hdr {
+  @include customize(theme) {
+    color: getValue(gray5);
+  }
+}
+.activity-box {
+  @include customize(theme) {
+    background: getValue(darkGray-fa);
+  }
+}
+.act-box-top {
+  @include customize(theme) {
+    border-color: getValue(gray2);
+  }
+  h4 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+    span {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+  }
+  .tag {
+    &.light {
+      @include customize(theme) {
+        background: getValue(gray5);
+        color: getValue(orBtnColor);
+      }
+    }
+    @include customize(theme) {
+      background: getValue(gray1);
+      color: getValue(white-11);
+    }
+  }
+}
+.text-lft {
+  @include customize(theme) {
+    color: getValue(red1);
+  }
+}
+.text-rg {
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+}
+.approved-txt-otr {
+  h5 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  .approved-txt-input {
+    .symbol {
+      span {
+        @include customize(theme) {
+          color: getValue(white-11);
+          border-color: getValue(white-11);
+        }
+      }
+    }
+    p {
+      @include customize(theme) {
+        border-color: getValue(gray5);
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.wtg {
+  @include customize(theme) {
+    color: #C7C7C7;
+  }
+}
+.dropdown-toggle {
+  @include customize(theme) {
+    border-color: getValue(gray3);
+    color: getValue(white-11);
+  }
+  span {
+    @include customize(theme) {
+      background: getValue(red1);
+    }
+  }
+}
+.media-innr {
+  &:hover {
+    h5 {
+      @include customize(theme) {
+        color: getValue(blue2);
+      }
+    }
+  }
+}
+.image-innr {
+  &:hover {
+    p {
+      @include customize(theme) {
+        color: getValue(blue2);
+      }
+      &.sub-para {
+        @include customize(theme) {
+          color: getValue(gray3);
+        }
+      }
+    }
+  }
+}
+.people-details-sec,
+.people-award-top-sec {
+  &::after {
+    @include customize(theme) {
+      background: getValue(gradColor);
+    }
+  }
+}
+.people-dtl-right {
+  ul {
+    li {
+      @include customize(theme) {
+        border-right-color: getValue(gray5);
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.sc-icon {
+  @include customize(theme) {
+    border-color: getValue(white-11);
+  }
+}
+.edit-innr {
+  .btn {
+    &:hover {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(gray1);
+    }
+  }
+}
+.people-dtl-right {
+  h5 {
+    @include customize(theme) {
+      color: getValue(gray6);
+    }
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.awd-list-outr {
+  @include customize(theme) {
+    background: getValue(bckColor);
+  }
+}
+.award-list {
+  li {
+    @include customize(theme) {
+      border-right-color: getValue(gray5);
+      color: getValue(white-11);
+    }
+    em {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+    ul {
+      li {
+        &:after {
+          @include customize(theme) {
+            background: getValue(gray5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.people-date-list {
+  ul {
+    li {
+      &:after {
+        @include customize(theme) {
+          background: getValue(gray5);
+        }
+      }
+    }
+  }
+}
+select {
+  &.select-style {
+    @include customize(theme) {
+      border: 1px solid getValue(bluishGray1);
+      color: getValue(white-11);
+      background-color: getValue(black-ff);
+    }
+    option {
+      color: #111;
+    }
+  }
+}
+.share-otr {
+  .form-control {
+    @include customize(theme) {
+      border: 1px solid getValue(gray5);
+      color: getValue(gray5);
+    }
+  }
+}
+.people-details-btm-left {
+  h5 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.share-input-innr {
+  span {
+    @include customize(theme) {
+      background: getValue(color1);
+    }
+  }
+}
+.checkbox-input {
+  .checkmark {
+    &:after {
+      @include customize(theme) {
+        border-color: getValue(gray5);
+      }
+    }
+    @include customize(theme) {
+      border-color: getValue(gray5);
+    }
+  }
+}
+.checkbox-input {
+  @include customize(theme) {
+    color: getValue(gray5);
+  }
+}
+.user-review-box {
+  @include customize(theme) {
+    background: getValue(black-ff);
+  }
+  ul {
+    .user-comment-list {
+      @include customize(theme) {
+        border-color: getValue(bluishGray1);
+      }
+      h4 {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+      ul {
+        li {
+          @include customize(theme) {
+            border-color: getValue(gray5);
+            color: getValue(gray5);
+          }
+        }
+      }
+    }
+  }
+}
+.user-review-icon {
+  figure {
+    @include customize(theme) {
+      background: getValue(circleColor);
+    }
+  }
+}
+.review-list {
+  a {
+    &.like {
+      @include customize(theme) {
+        color: getValue(red0);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(bluishGray3);
+    }
+  }
+}
+.spoiler-btn {
+  @include customize(theme) {
+    border-color: getValue(blue2);
+    color: getValue(blue2);
+  }
+}
+.spoiler-box {
+  @include customize(theme) {
+    background: getValue(darkGray-fa);
+  }
+}
+.people-details-btm-right {
+  @include customize(theme) {
+    border-color: getValue(gray3);
+  }
+}
+.social-icon-list {
+  li {
+    a {
+      @include customize(theme) {
+        border-color: getValue(white-11);
+      }
+    }
+  }
+}
+.article-innr {
+  h5 {
+    @include customize(theme) {
+      color: getValue(blue2);
+    }
+  }
+  h6 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  p {
+    @include customize(theme) {
+      border-color: getValue(gray3);
+    }
+  }
+}
+.cc-hdr {
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+  a {
+    &:hover {
+      @include customize(theme) {
+        color: getValue(blue2);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.cc-para {
+  @include customize(theme) {
+    color: getValue(gray3);
+  }
+}
+.more-article-btn {
+  &:hover {
+    @include customize(theme) {
+      border-color: getValue(red0);
+      background: getValue(red0);
+    }
+  }
+  @include customize(theme) {
+    border-color: getValue(white-11);
+    color: getValue(white-11);
+  }
+}
+.goggle-add {
+  margin-bottom: 80px;
+  p {
+    @include customize(theme) {
+      color: getValue(gray12);
+    }
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  @include customize(theme) {
+    color: getValue(gray5);
+  }
+}
+.slider-innr {
+  p {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.swiper-pagination-bullet {
+  &.swiper-pagination-bullet-active {
+    @include customize(theme) {
+      background-color: getValue(blue2);
+    }
+  }
+  @include customize(theme) {
+    background-color: getValue(gray5);
+  }
+}
+.share-otr {
+  .form-control {
+    &::placeholder {
+      @include customize(theme) {
+        color: getValue(gray5);
+      }
+    }
+  }
+}
+.mb-tag-list {
+  li {
+    @include customize(theme) {
+      border-color: getValue(gray6);
+      color: getValue(gray6);
+    }
+  }
+}
+.people-details-btm-left {
+  @include customize(theme) {
+    border-color: getValue(gray3);
+  }
+}
+
+.go-main {
+  &:hover {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+  }
+  @include customize(theme) {
+    color: getValue(gray5);
+  }
+}
+.people-award-bottom-right {
+  h4 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+  .people-award-bottom-list {
+    @include customize(theme) {
+      background-color: getValue(listBackground);
+    }
+    h5 {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(gray8);
+      }
+      span {
+        @include customize(theme) {
+          color: getValue(red1);
+          background-color: getValue(gray1);
+        }
+      }
+    }
+  }
+}
+.more-list {
+  &:hover {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+  }
+  @include customize(theme) {
+    color: getValue(bluishGray2);
+  }
+}
+.no-going {
+  @include customize(theme) {
+    border-color: getValue(gray5);
+  }
+  span {
+    @include customize(theme) {
+      background-color: getValue(bluishGray1);
+      color: getValue(orBtnColor);
+    }
+  }
+}
+.no-data-wrapper {
+  @include customize(theme) {
+    background-color: getValue(black-ff);
+  }
+  p {
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+}
+.user-review-box {
+  &.fm-line {
+    h4 {
+      span {
+        @include customize(theme) {
+          color: getValue(gray5);
+        }
+      }
+    }
+  }
+}
+.community-btm-otr {
+  @include customize(theme) {
+    border-color: getValue(gray1);
+  }
+}
+.community-btm-img {
+  h6 {
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+}
+.cast-dropdown {
+  .cast-toggle {
+    @include customize(theme) {
+      background-color: getValue(dropBack);
+    }
+    @include customize(theme) {
+      color: getValue(gray5);
+    }
+  }
+  ul {
+    @include customize(theme) {
+      background: getValue(black-ff);
+      border-color: getValue(bluishGray1);
+    }
+    li {
+      &.active,
+      &:hover {
+        a {
+          @include customize(theme) {
+            color: getValue(blue2);
+          }
+        }
+      }
+      a {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+}
+.yumi-otr {
+  span {
+    &.tg1 {
+      @include customize(theme) {
+        background: getValue(tagColor);
+      }
+    }
+    &.tg2 {
+      @include customize(theme) {
+        background: getValue(listBackground);
+      }
+    }
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.e-para {
+  &:hover {
+    @include customize(theme) {
+      color: getValue(blue2);
+    }
+  }
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+}
+.media-innr {
+  .e-date {
+    @include customize(theme) {
+      color: getValue(gray6);
+    }
+  }
+}
+.social-icon-list {
+  .e-date {
+    @include customize(theme) {
+      color: getValue(gray6);
+    }
+  }
+}
+.season-list {
+  li {
+    h5 {
+      @include customize(theme) {
+        color: getValue(gray6);
+      }
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.rating {
+  &.yumi-rating {
+    ul {
+      li {
+        @include customize(theme) {
+          color: getValue(red0);
+        }
+      }
+    }
+  }
+}
+.webtoons-popular {
+  h6 {
+    @include customize(theme) {
+      color: getValue(white-11);
+      border-color: getValue(gray5);
+    }
+  }
+}
+.rating-ot {
+  li {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+  }
+}
+.webtoon-filter-outr {
+  @include customize(theme) {
+    background: getValue(black-ff);
+    border-color: getValue(bluishGray1);
+  }
+  ul {
+    li {
+      @include customize(theme) {
+        border-color: getValue(gray5);
+      }
+      select,
+      .filter-toggle {
+        option {
+          @include customize(theme) {
+            color: getValue(black-ff);
+          }
+        }
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+      .filter-toggle {
+        &.filtershow {
+          @include customize(theme) {
+            color: getValue(red1);
+          }
+        }
+      }
+    }
+  }
+}
+.filter-dropdown-menu {
+  @include customize(theme) {
+    border-color: getValue(bluishGray1);
+  }
+}
+.filter-drop-innr {
+  .filter-drop-left {
+    &:after {
+      @include customize(theme) {
+        background: getValue(white-11);
+      }
+    }
+    p {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    // .select-fl-innr{
+    //   .select-style{
+    //     option{
+    //       @include customize(theme) {
+    //         color: getValue(white-11);
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+.fliter-check {
+  .checkmark {
+    @include customize(theme) {
+      background: getValue(check);
+    }
+    &:after {
+      @include customize(theme) {
+        border-color: getValue(white-11);
+      }
+    }
+  }
+}
+.dropdown-profile{
+  .dropdown-menu{
+    .dropdown-item{
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+  }
+}
+.filter-radio {
+  .checkmark {
+    @include customize(theme) {
+      border-color: getValue(gray6);
+      color: getValue(gray6);
+    }
+  }
+}
+.filter-radio input:checked ~ .checkmark {
+  @include customize(theme) {
+    background: getValue(white-11);
+    color: getValue(gray2);
+  }
+}
+.date-input-innr {
+  input {
+    &::placeholder {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    @include customize(theme) {
+      border-color: getValue(gray5);
+      color: getValue(white-11);
+    }
+  }
+}
+.md-ic {
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+}
+.select-fl-innr {
+  .tags-show {
+    span {
+      @include customize(theme) {
+        border-color: getValue(gray6);
+        color: getValue(gray6);
+      }
+    }
+  }
+}
+.media-otr {
+  &.vd-popular {
+    .media-innr {
+      h6 {
+        @include customize(theme) {
+          color: getValue(gray5);
+        }
+      }
+      ul {
+        @include customize(theme) {
+          border-color: getValue(gray5);
+        }
+        li {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+      }
+    }
+  }
+}
+.gray-bg {
+  @include customize(theme) {
+    background: getValue(listBackground);
+    color: getValue(white-11);
+  }
+}
+.a-content {
+  ul {
+    li {
+      p {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+    }
+  }
+}
+.menu-links {
+  @media screen and (max-width: 1100px) {
+    @include customize(theme) {
+      background: getValue(black-ff);
+    }
+  }
+}
+.login-link {
+  &:hover {
+    @include customize(theme) {
+      color: getValue(red0);
+    }
+  }
+  @include customize(theme) {
+    color: getValue(white-11);
+  }
+}
+.about-content {
+  h1 {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.dropdown-lang {
+  select {
+    @include customize(theme) {
+      color: getValue(white-11);
+    }
+  }
+}
+.time-group {
+  @include customize(theme) {
+    border-color: getValue(gray5);
+  }
+}
+.success-txt {
+  @include customize(theme) {
+    color: getValue(green);
+  }
+}
+.add-new-movie {
+  .new-container {
+    .heading {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+    .search-section {
+      @include customize(theme) {
+        border-color: getValue(gray5);
+        background: getValue(black-ff);
+      }
+      .serch-title {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+      .search-subtitle {
+        @include customize(theme) {
+          color: getValue(gray6);
+        }
+      }
+      .search-form {
+        .select-option {
+          .select-style {
+            @include customize(theme) {
+              color: getValue(gray5);
+              border-color: getValue(gray5);
+            }
+            // option {
+            //   @include customize(theme) {
+            //     color: getValue(white-11);
+            //   }
+            // }
+          }
+        }
+        .search-field {
+          input {
+            @include customize(theme) {
+              border-color: getValue(gray5);
+              color: getValue(gray5);
+            }
+          }
+        }
+        .search-btn {
+          @include customize(theme) {
+            // color: getValue(white-11);
+            background: getValue(red1);
+          }
+        }
+      }
+    }
+    .filter-section {
+      .select-option {
+        .select-style {
+          option {
+            // @include customize(theme) {
+            //   color: getValue(white-11);
+            // }
+          }
+        }
+      }
+    }
+    .movie-list-section {
+      .data-title {
+        @include customize(theme) {
+          color: getValue(white-11);
+        }
+      }
+      .movie-list-wrapper {
+        .movie-radio-list {
+          .movie-radio-item {
+            @include customize(theme) {
+              border-color: getValue(bluishGray1);
+            }
+            &:last-child {
+              @include customize(theme) {
+                border-color: getValue(bluishGray1);
+              }
+            }
+            label {
+              .check-circle {
+                input {
+                  &:not(:checked) {
+                    + .radio-circle {
+                      .inner-circle {
+                        @include customize(theme) {
+                          outline-color: getValue(gray2);
+                          background-color: transparent;
+                        }
+                      }
+                    }
+                  }
+                }
+                .radio-circle {
+                  .inner-circle {
+                    @include customize(theme) {
+                      outline-color: getValue(white-11);
+                      background-color: getValue(white-11);
+                    }
+                  }
+                }
+              }
+              .movie-content {
+                .movie-details {
+                  .title-date {
+                    .title {
+                      @include customize(theme) {
+                        color: getValue(white-11);
+                      }
+                    }
+                    .date {
+                      @include customize(theme) {
+                        color: getValue(gray8);
+                      }
+                    }
+                  }
+                  .summary {
+                    @include customize(theme) {
+                      color: getValue(gray8);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .no-data-block {
+        @include customize(theme) {
+          border-color: getValue(bluishGray1);
+        }
+        .no-data-text {
+          @include customize(theme) {
+            color: getValue(gray5);
+          }
+        }
+      }
+    }
+    .checkbox-section {
+      label {
+        .check-text {
+          @include customize(theme) {
+            color: getValue(gray5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-new-movie-form {
+  .new-container {
+    .heading {
+      @include customize(theme) {
+        color: getValue(white-11);
+      }
+    }
+
+    .filter-section {
+      .select-option {
+        .select-style {
+          option {
+            // @include customize(theme) {
+            //   color: getValue(white-11);
+            // }
+          }
+        }
+      }
+    }
+
+    .left-panel-menu {
+      .left-menu {
+        @include customize(theme) {
+          border-color: getValue(bluishGray1);
+        }
+        ul {
+          li {
+            &.active {
+              a {
+                @include customize(theme) {
+                  color: getValue(white-11);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .primary-details-from {
+      @include customize(theme) {
+        background: getValue(black-ff);
+      }
+      .page-heading-area {
+        h2 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }        
+      }
+
+      .login-wrap {
+        .divRows {
+          h3 {
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+          .div1colmns{
+            .numbers{
+              @include customize(theme) {
+                color: getValue(gray5);
+              }
+            }
+          }
+          .div3colmns {
+            label {
+              @include customize(theme) {
+                color: getValue(gray4);
+              }
+            }
+          }
+          .div2colmns {
+            .date-picker {
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            .addBtn {
+              @include customize(theme) {
+                color: getValue(white-11);
+                border-color: getValue(bluishGray1);
+              }
+            }
+            .minusBtn {
+              @include customize(theme) {
+                color: getValue(white-11);
+                background: getValue(bluishGray1);
+              }
+            }
+          }
+          .div4colmns {
+            .addBtn {
+              @include customize(theme) {
+                color: getValue(white-11);
+                border-color: getValue(bluishGray1);
+              }
+            }
+            .minusBtn {
+              @include customize(theme) {
+                color: getValue(white-11);
+                background: getValue(bluishGray1);
+              }
+            }
+          }
+          .togglewatch-area {
+            label{
+              @include customize(theme) {
+                color: getValue(gray6);
+              }
+            }
+            .watch-list-area {
+              @include customize(theme) {
+                border-color: getValue(bluishGray1);
+              }
+              ul {
+                li {
+                  @include customize(theme) {
+                    border-color: getValue(bluishGray1);
+                  }
+                  span {
+                    @include customize(theme) {
+                      color: getValue(circleColor);
+                    }
+                  }
+                  a {
+                    @include customize(theme) {
+                      color: getValue(circleColor);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .selectTags-area {
+            .watchTags {
+              @include customize(theme) {
+                border-color: getValue(gray5);
+              }
+              .icon-txt {
+                span {
+                  @include customize(theme) {
+                    color: getValue(gray5);
+                  }
+                }
+              }
+            }
+          }
+          .search-wrap-area {
+            @include customize(theme) {
+              border-color: getValue(gray5);
+            }
+          }
+        }
+      }
+      .radioBtn [type=radio]:checked + label:after, 
+      .radioBtn [type=radio]:not(:checked) + label:after{
+        @include customize(theme) {
+          background: getValue(white-11);
+        }
+      }
+      .date-picker{
+        .dp__input_wrap{
+          .dp__input{
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+        }
+      }
+
+      a.saveBtn {
+        @include customize(theme) {
+          background: getValue(white-11);
+          color: getValue(bluishBlack);
+        }
+      }
+
+      .country-list{
+        .count-list-tag{
+          @include customize(theme) {
+            border-color: getValue(gray4);
+            color: getValue(gray4);
+          }
+        }
+      }
+    }
+
+    .media-from-details{
+      @include customize(theme) {
+        background: getValue(black-ff);
+      }
+      .page-heading-area {
+        h2 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+        a.saveBtn {
+          @include customize(theme) {
+            background: getValue(white-11);
+            color: getValue(bluishBlack);
+          }
+        }
+      }
+      .media-tabber-area{
+        .tabs-header {
+          li{
+            @include customize(theme) {
+              color: getValue(bluishGray3);
+            }
+            &.active{
+              @include customize(theme) {
+                color: getValue(red0);
+              }
+            }
+          }
+        }
+      }
+
+      .title-area{
+        h2{
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+      }
+      .video-thumb{
+        p{
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+      }
+      a.saveBtn {
+        @include customize(theme) {
+          background: getValue(white-11);
+          color: getValue(bluishBlack);
+        }
+      }
+      .image-upload-area{
+        h3{
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }
+      }
+      .note{
+        p{
+          @include customize(theme) {
+            color: getValue(gray5);
+          }
+          span{
+            @include customize(theme) {
+              color: getValue(gray9);
+            }
+          }
+        }
+      }
+
+    }
+
+    .credit-from-details{
+      @include customize(theme) {
+        background: getValue(black-ff);
+      }
+      .page-heading-area {
+        h2 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }        
+      }
+
+      a.saveBtn {
+        @include customize(theme) {
+          background: getValue(white-11);
+          color: getValue(bluishBlack);
+        }
+      }
+      
+      .credit-tabber-area{
+        .tabs-header{
+          li{
+            @include customize(theme) {
+              color: getValue(bluishGray3);
+            }
+            &.active{
+              @include customize(theme) {
+                color: getValue(red0);
+              }
+            }
+          }
+        }
+      }
+
+      .search-wrap-area{
+        @include customize(theme) {
+          border-color: getValue(bluishGray3);
+        }
+        ul{
+          li{
+            span{
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+            a{
+              @include customize(theme) {
+                color: getValue(white-11);
+              }
+            }
+          }
+        }        
+      }
+      
+      .single-credit-list{
+        @include customize(theme) {
+          background: getValue(listBackground);
+        }
+        .divrow{
+          p{
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+          h3{
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+          .gustBtn{
+            @include customize(theme) {
+              border-color: getValue(gray4);
+              color: getValue(gray4);
+            }
+            
+          }
+        }
+      }
+
+    }
+
+    .tags-from-details{
+      @include customize(theme) {
+        background: getValue(black-ff);
+      }
+      .page-heading-area {
+        @include customize(theme) {
+          border-color: getValue(bluishGray1);
+        }
+        h2 {
+          @include customize(theme) {
+            color: getValue(white-11);
+          }
+        }        
+      }
+
+      a.saveBtn {
+        @include customize(theme) {
+          background: getValue(white-11);
+          color: getValue(bluishBlack);
+        }
+      }      
+      
+      .tag-content-list{
+        @include customize(theme) {
+          background: getValue(listBackground);
+        }
+        
+        .tags-upper-area{
+          @include customize(theme) {
+            border-color: getValue(bluishGray1);
+          }
+          h4{
+            @include customize(theme) {
+              color: getValue(white-11);
+            }
+          }
+        }
+
+        .tags-listings{
+          .single-tag{
+            @include customize(theme) {
+              border-color: getValue(bluishGray1);
+              color: getValue(white-11);
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+
+.filters{
+  .list-common{
+      .tag-name{
+          .watch-list-area {              
+              ul {   
+                @include customize(theme) {
+                  background-color: getValue(black-ff);
+                }             
+                  li {                   
+                    @include customize(theme) {
+                      color: getValue(white-11);
+                    }
+                  }
+              }
+          }
+      }
+  }
+}
+.theme-light{
+  .search-tags-area{
+    .single-tags{
+      border-color: #828282;
+      p{
+        color: #828282;
+      }
+    }
+  } 
+  .btn{
+    color: #DB5857;
+  }
+  .comm-txt {
+    h5{
+      color: #c7c7c7;
+      border-color: #CCCCCE ;
+    }
+    p{
+      background: #fafafa !important;
+    }
+  }
+  .comm-list{
+    li{
+      border-bottom: #CCCCCE;
+    }
+  }
+  .c-hdr {
+    span{
+      color: #C7C7C7;
+    }
+  }
+  .prize-main{
+    .prize-col{
+      .left-side{
+        .prize-list-detail{
+          li {
+            .nominee-content{
+              ul{
+                li{
+                  p{
+                    color: #828282;
+                  }
+                  span{
+                    color: #BDBDBD;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+  .search-results{
+    .search-main{
+      .search-right{
+        .search-no-data{
+          border-top: 1px solid #CCCCCE;
+          border-bottom: 1px solid #CCCCCE;
+        }
+      }
+    }
+  }  
+  .add-new-movie-form{
+    .new-container{
+      .media-from-details{
+        .media-tabber-area{
+          .tabs-header{
+            border-color: #C7C7C7;
+            li{
+              color: #6F7177;
+            }
+          }
+          a{
+            &.saveBtn{
+              color: #E8E8E9;
+            }
+          }
+        }
+      }
+      .credit-from-details{
+        .search-wrap-area{
+          ul{
+            li{
+              a{
+                color:#A4A4A4;
+              }
+            } 
+          } 
+        }
+        .single-credit-list{
+          background: #f2f2f2;
+        }
+      }  
+      .with-dropdown{
+        select{
+          background-repeat: no-repeat;
+          background-position: center right 12px;
+        }
+      } 
+      .primary-details-from{
+        .login-wrap{
+          .divRows{
+            .togglewatch-area{
+              .watch-list-area{
+                ul {
+                  li{
+                    border-color: #CCCCCE;
+                    span{
+                      color:#A4A4A4;
+                    }
+                    a{
+                      color:#A4A4A4;
+                    }
+                  } 
+                }
+              }
+            }
+            .div2colmns{
+              .minusBtn{
+                background:#CCCCCE ;
+              }
+            } 
+            .div4colmns{
+              .minusBtn{
+                background:#CCCCCE ;
+                border: 1px solid #CCCCCE;
+              }
+            }
+          }
+        }
+        a{
+          &.saveBtn{
+            color: #E8E8E9;
+          }
+        }
+        .country-list{
+          .count-list-tag {
+            border-color: #828282;
+            color: #828282;
+          }
+        }
+      } 
+      .left-panel-menu{
+        .left-menu{
+          background: #fff;
+          border-color: #CCCCCE;
+        }
+      } 
+      .tags-from-details{
+        .page-heading-area{
+          border-color: #C7C7C7;
+        }
+        .tag-content-list{
+          background: rgba(34, 34, 34, 0.06);
+          .tags-listings{
+            .single-tag{
+              border-color: #828282;
+              color: #828282;
+            }
+            
+          } 
+          .tags-upper-area{
+            border-color: #CCCCCE;
+          }
+        } 
+      } 
+      .search-wrap-area{
+        ul{
+          li{
+            span{
+              color: #111;
+            }
+          }
+        }
+      }    
+    }
+  }    
+  .poster-grid-area{
+    .thumbs{
+      .optionmenu{
+        .dropstxt{
+          background-color: #fff;
+          p{
+            color: #111;
+          }
+        }
+      } 
+    } 
+  } 
+  .hot-videos{
+    .hot-lists{
+      .vd-innr-content{
+        p{
+          color: #111;
+        }
+      } 
+    } 
+  } 
+  .real-time{
+    .real-time-content{
+      ul{
+        li{
+          border-top: 1px solid #CCCCCE;
+          .right-content {
+            .comment-name{
+              p{
+                color: #a4a4a4;
+                span{
+                  border-left: 1px solid #a4a4a4;
+                  color: #a4a4a4;
+                }
+              } 
+            }
+          }
+        }
+      } 
+    } 
+  } 
+  .tag-details{
+    .tagdetail-content{
+      .tags-list{
+        li{
+          border-top: 1px solid #CCCCCE;
+          a{
+            .main-dta{
+              .p-content{
+                background: rgba(242, 242, 242, 1);
+              }
+              span{
+                p{
+                  color: #4c4c4c;
+                }
+              }
+            }
+          }
+        }
+      }
+      .tab-outr{
+        
+        .tabs-header{
+          border: 1px solid #CCCCCE;
+          li{
+            border: 1px solid #bdbdbd;
+            color: #bdbdbd;
+            &.active{
+              border-color: #4C4C4C;
+            }
+          }
+        }
+      } 
+    }
+     
+  }
+  .left-panel-menu{
+    .left-menu{
+      ul{
+        li{
+          a{
+            color: #bdbdbd;
+          }
+        }
+      }
+    } 
+  } 
+  .divider{
+    border-color: #C7C7C7;
+  }
+  .image-innr{
+    p{
+      &.sub-para{
+        color: #c7c7c7;
+      }
+    }
+  } 
+  .review-list{
+    a{
+      color: #6f7177;
+    }
+  } 
+  .tvepisodes-btm{
+    .tvepisodes-content{
+      .tv-lists{
+        .tv-content{
+          border-bottom: 1px solid #CCCCCE;
+          .left-content{
+            .tv-heading{
+              span{
+                color:  #C7C7C7;
+              }
+            }
+          }  
+        }
+      }
+    }
+  }  
+  .tvshow-episodes-banner{
+    .banner-content{
+      .left-content{
+        a{
+          color: #A4A4A4;
+        }
+      }  
+    }
+  }  
+  .add-new-movie{
+    .new-container{
+      .search-section{
+        border-color: #CCCCCE !important;
+      }
+      .movie-list-section{
+        .movie-list-wrapper{
+          .movie-radio-list{
+            .movie-radio-item{
+              border-color: #CCCCCE;
+              &:last-child{
+                border-color: #CCCCCE;
+              }
+              label{
+                .movie-content{
+                  .movie-details{
+                    .title-date{
+                      .date{
+                        color:#BDBDBD;
+                      }
+                      .sub-sub{
+                        color: #111;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .filter-section{
+        .select-option{
+          .select-style{
+            border-color: #a4a4a4;
+          }
+        }
+      }  
+    }
+  }  
+  .primary-details-from{
+    .page-heading-area{
+      border-color: #C7C7C7;
+    }
+  } 
+  select{
+    &.select-style {
+      border-color: #A4A4A4;
+    }
+  } 
+  .custom-table-wrapper{
+    .custom-table{
+      .table-head{
+        .table-head-row{
+          background: rgba(34, 34, 34, 0.1);
+        }
+      }
+    }
+  }   
+  .video-thumb{
+    .vidthumb{
+      .optionmenu{
+        .dropstxt{
+          background-color: #fff;
+          border: 1px solid #CCCCCE;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+          span{
+            color: #111;
+          }
+        }
+      }
+    }
+  }
+  .poster-grid-area{
+    .thumbs{
+      .optionmenu {
+        .dropstxt{
+          background-color: #fff;
+          border: 1px solid #CCCCCE;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+        }
+      }
+    }
+  }  
+  .search-episode{
+    .search-form{
+      .select-option{
+        .select-style{
+          color: #111 !important;
+        }
+      }
+    }
+  }   
+  .episode-list{
+    .list-wrapper{
+      .episode-card{
+        .right-content {
+          .episode-details{
+            .episode-no{
+              background-color: #CCCCCE !important;
+              color: #fff !important;
+            }
+          }
+        }
+      }
+    }
+  }  
+  .images-grid-area{
+    .thumbs{
+      .optionmenu{
+        .dropstxt{
+          border: 1px solid #CCCCCE;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+          background-color: #fff;
+          p{
+            color:#111;
+          }
+        }
+      }
+    }
+  }   
+  .tab-outr{
+    &.tab-style {
+      .tabs-header{
+        li{
+          &.active{
+            color: #E0E0E0 !important;
+          }
+        }
+      }   
+    }
+  }
+  .common-shows{
+    .common-content{
+      .common-tabs{
+        .lists{
+          .outerside{
+            .list-content{
+              .news-date{
+                .newstatus{
+                  color: #FFFFFF;
+                  background-color: #CCCCCE;
+                }
+                span{
+                  &::before{
+                    background-color: #a4a4a4;
+                  }
+                }
+              }
+              .pop-count{
+                span{
+                  p{
+                    span{
+                      &::before{
+                        background-color: #a4a4a4;
+                      }
+                    }
+                  }
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+  .radioBtn [type=radio]:checked + label:before{
+    border: 2px solid #111;;
+  }
+  // .radioBtn [type=radio]:checked + label{
+  //   font-size: 14px;
+  //   line-height:19px;
+  // }
+  .mb-tag-list{
+    li{
+      border-color: #bdbdbd;
+      color: #bdbdbd;
+    }
+  } 
+  .movies-details-btm-sec{
+    .people-details-btm-otr{
+      .people-details-btm-left{
+        .lists{
+          .list-content{
+            p{
+              color: #bdbdbd;
+            }
+            .news-date{
+              border-top: 1px solid #c7c7c7;
+              p{
+                color: #bdbdbd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }    
+} 
+
+
+
+.theme-dark{
+  .comm-txt {
+    p{
+      background: rgba(34, 34, 34, 0.5) !important;
+    }
+  }
+  .c-hdr{
+    span{
+      color: #BDBDBD;
+      line-height: 15px;
+    }
+  }
+  .tab-outr{
+    .tabs-header{
+      li{
+        color: #9E9FA3;
+      }
+    } 
+    &.tab-style {
+      .tabs-header{
+        li{
+          &.active{
+            border-color: #4C4C4C;
+            color: #4c4c4c !important;
+          }
+        }
+      }   
+    }
+  } 
+  .add-new-movie-form{
+    .new-container{
+      .credit-from-details{
+        .single-credit-list{
+          color: #a4a4a4; 
+          // background: #F2F2F2 !important;
+          .divrow {
+            .gustBtn{
+              color: #BDBDBD;
+              border-color: #BDBDBD;
+            }
+          }
+        }
+        .search-wrap-area{
+          border-color: #41444C;
+          ul{
+            li{
+              a{
+                color:#A4A4A4;
+              }
+            } 
+          }
+        }
+      } 
+      .left-panel-menu{
+        .left-menu {
+          background-color: #111;
+        }
+      } 
+      .tags-from-details{
+        .tag-content-list{
+          .tags-listings{
+            .single-tag{
+              border-color: #bdbdbd;
+              color: #bdbdbd;
+            }
+          }
+        }
+      } 
+      .primary-details-from{
+        .country-list{
+          .count-list-tag {
+            border-color: #BDBDBD;
+            color: #BDBDBD;
+          }
+        } 
+        .login-wrap{
+          .divRows{
+            .div3colmns{
+              label{
+                color: #BDBDBD;
+              }
+            }
+          }
+        }   
+      } 
+      .page-heads-area{
+        .heading{
+          span{
+            color:  #E0E0E0;
+          }
+        }
+      } 
+    } 
+  } 
+  .real-time{
+    .real-time-content{
+      ul{
+        li{
+          .right-content{
+            .comment-name{
+              p {
+                span{
+                  border-left: 1px solid #E0e0e0;
+                }
+              }
+            } 
+          } 
+        } 
+      } 
+    } 
+  } 
+  .tag-details{
+    .tagdetail-content{
+      .tags-list{
+        li{
+          a{
+            .main-dta{
+              .p-content{
+                background: rgba(34, 34, 34, 0.5)
+              }
+            }
+          }
+        }
+      }
+    }
+  }    
+  .divider{
+    border-color: #666;
+  }
+  .search-tags-area{
+    .single-tags{
+      p{
+        color: #bdbdbd;
+      }
+    } 
+  } 
+  .cast-dropdown{
+    .select-style{
+      background-color: rgba(106, 110, 122, 0.3);
+      border-color: rgba(106, 110, 122, 0.3);
+    }
+  }
+  .add-new-movie{
+    .new-container{
+      .movie-list-section{
+        .movie-list-wrapper{
+          .movie-radio-list{
+            .movie-radio-item{
+              label{
+                .movie-content{
+                  .movie-details{
+                    .title-date{
+                      .date{
+                        color:#E0E0E0;
+                      }
+                      .sub-sub{
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }   
+  .no-data-wrapper {
+    border-color: #41444C;
+  }  
+  select{
+    &.select-style {
+      border-color: #A4A4A4;
+    }
+    // &.form-control{
+    //   option{
+    //     color: #fff !important;
+    //   }
+    // }
+  } 
+  .video-thumb{
+    .vidthumb{
+      .optionmenu{
+        .dropstxt{
+          background-color: #111;
+          border: 1px solid #41444C;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+          span{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .poster-grid-area{
+    .thumbs{
+      .optionmenu {
+        .dropstxt{
+          background-color: #111;
+          border: 1px solid #41444C;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+        }
+      }
+    }
+  } 
+  .search-episode{
+    .search-form {
+      .select-option{
+        .select-style{
+          color: #fff !important;
+          
+        }
+      }
+    }
+  }  
+  .images-grid-area{
+    .thumbs{
+      .optionmenu{
+        .dropstxt{
+          border: 1px solid #41444C;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06);
+        }
+      }
+    }
+  }   
+  .image-innr{
+    p{
+      &.sub-para{
+        color: #BDBDBD;
+      }
+    }
+  } 
+}

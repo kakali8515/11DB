@@ -1,0 +1,38 @@
+@import "./variable";
+@import "./news";
+@import "./button";
+@import "./dictionary";
+@import "./data-management";
+@import "./bulk-working";
+@import "./main";
+@import "./frontlisting";
+@import "./edit-page";
+
+.error-txt {
+    color: #db5857;
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+input::placeholder {
+  color: $colorC7;
+}
+
+select{
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+.twoBtn {
+  gap: 10px;
+}
+.table-otr.table-innr .action {
+  gap: 10px;
+}
+.admin-right .heading {
+  font-size: 30px;
+}

@@ -1,0 +1,134 @@
+<template>
+  <section class="movies-sec">
+    <div class="container">
+      <h2>{{ $t("tvShows.tvShowsPopular") }}</h2>
+      <div class="movies-main">
+        <FilterCard @getSearchData="searchData" :certificationtype="type" />
+        <div class="moives-list">
+          <div class="outerside" v-if="newResult.length > 0">
+            <PopularCard v-for="(tv, i) in newResult" :key="i" :popular="tv" RedirectLink="TvShowsDetails" />
+          </div>
+          <p v-if="isData && newResult.length == 0" class="list-no-data">
+            {{ $t("searchResults.noData") }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div v-if="isLoading"></div>
+    <div ref="bottom"></div>
+  </section>
+</template>
+<script>
+import FilterCard from "@/components/FilterCard.vue";
+import PopularCard from "@/components/PopularCard.vue";
+import TVShowsDetailsService from "@/services/TVShowsDetailsService";
+export default {
+  name: "TvShowsPopular",
+  components: { FilterCard, PopularCard },
+  inject: ["common"],
+  data() {
+    return {
+      type: "tv",
+      page: 1,
+      limit: 20,
+      popular_list: [],
+      totalRecords: 0,
+      newResult: [],
+      search_params: {},
+      isData: false,
+      isLoading: false,
+      observer: null,
+      date: new Date().toJSON().slice(0, 10).replace(/-/g, "-"),
+    };
+  },
+  watch: {
+    "common.state.SelectedLang": function (newVal, oldVal) {
+      if (newVal && oldVal && newVal != oldVal) {
+        this.newResult = [];
+        this.page = 1;
+        this.isData = false;
+        this.getPopularTVList();
+      }
+    },
+  },
+  mounted() {
+    localStorage.removeItem("site_language");
+    localStorage.removeItem("draft_ids");
+    // this.getPopularTVList();
+    // window.addEventListener("scroll", this.onScroll);
+    this.observeWindow();
+  },
+  beforeUnmount() {
+    // window.removeEventListener("scroll", this.onScroll);
+    this.observer.disconnect();
+  },
+  methods: {
+    observeWindow() {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !this.isLoading) {
+            this.getPopularTVList();
+          }
+        },
+        { threshold: 0 }
+      );
+      this.observer.observe(this.$refs.bottom);
+    },
+    getPopularTVList() {
+      let credential = {
+        page: this.page,
+        limit: this.limit,
+        search_params: this.search_params,
+        date: this.date
+      };
+      this.isLoading = true;
+      TVShowsDetailsService.getPopularTVList(credential)
+        .then((res) => {
+          if (res.status == 200) {
+            this.isData = true;
+            this.popular_list = res.data.results;
+            this.totalRecords = res.data.total_records;
+            this.popular_list.forEach((item) => {
+              // Check if an item with the same ID already exists in the displayed items array
+              const existingItem = this.newResult.some(
+                (displayedItem) => displayedItem.id === item.id
+              );
+
+              // If the item doesn't already exist in the displayed items array, push it into the array
+              if (!existingItem) {
+                this.newResult.push(item);
+              }
+            });
+            if (this.totalRecords > this.newResult.length) {
+              this.page++;
+              this.isLoading = false;
+            }
+            // this.newResult.push(...this.popular_list);
+          }
+        })
+        .catch((err) => {
+          return;
+        });
+    },
+    // search params
+    searchData(val) {
+      this.search_params = val;
+      this.newResult = [];
+      this.page = 1;
+      this.getPopularTVList();
+    },
+    // onScroll() {
+    //   let bottomOfWindow =
+    //     document.documentElement.offsetHeight +
+    //       document.documentElement.scrollTop >=
+    //     document.documentElement.scrollHeight;
+    //   if (bottomOfWindow && this.totalRecords > this.newResult.length) {
+    //     this.page = ++this.page;
+    //     setTimeout(() => {
+    //       this.getPopularTVList();
+    //     }, 100);
+    //   }
+    // },
+  },
+};
+</script>

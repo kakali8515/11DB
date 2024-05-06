@@ -1,0 +1,1 @@
+const s="/assets/wishlist-solid.158c5f46.svg",t="/assets/fb.d31713f1.svg",a="/assets/twitter-icon.6665888b.svg",o="/assets/mail.87c3d400.svg",i="/assets/link.d3eafc2e.svg";export{s as _,t as a,a as b,o as c,i as d};

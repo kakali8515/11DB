@@ -1,0 +1,1228 @@
+
+.tvshows-details-sec{
+    border: none;
+    .people-dtl-otr{
+        .awd-list-outr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24.53px;
+            border-radius: 8px;
+            @media (max-width: 991px) {
+                padding: 23px 16px;
+            }
+        }
+        .award-list {
+            display: flex;
+            align-items: center;
+            width:100%;
+            li {
+                width: auto!important;
+                padding-right: 24px;
+                margin-right: 24px;
+                border-right-style: solid;
+                border-right-width: 1px;
+                font-size: 16px;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0!important;
+                @media (max-width: 991px) {
+                    padding-right: 10px;
+                    margin-right: 10px;
+                }
+                &:last-child {
+                    padding-right: 0;
+                    margin-right: 0;
+                    border-right: 0;
+                }
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 12px;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    li {
+                        padding-left: 8px;
+                        margin-left: 8px;
+                        margin-right: 0;
+                        padding-right: 0;
+                        border: 0;
+                        position: relative;
+                        display: block;
+                        &:first-child {
+                            margin-left: 0;
+                            padding-left: 0;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            width: 3px;
+                            height: 3px;
+                            left: 0;
+                            top: 6px;
+                            border-radius: 100%;
+                            position: absolute;
+                            content: '';
+                        }
+                    }
+                }
+                span {
+                    margin-right: 9px;
+                }
+                em {
+                    font-style: normal;
+                    font-size: 12px;
+                }
+            }
+        }
+       .people-dtl-left{
+        figure{
+            height:100%;
+            img{
+                // height:100%;
+                height: auto;
+            }
+        }
+       }
+        .people-dtl-right{
+            display: flex;
+            flex-direction: column;
+          .big-hdr{
+            margin-bottom: 24px;
+          }
+            .people-date-list{
+                margin:0px 0 24px;
+                li{
+                    margin-bottom: 0;
+                    @media screen and (max-width:768px) {
+                        margin-bottom: 5px;
+                    }
+                }
+                .gray-bg{
+                    padding: 2px 16px;
+                    border-radius: 20px;
+                    border: none;
+                }
+                @media screen and (max-width:768px) {
+                    margin: 18px 0 19px;
+                    
+                }
+            }
+            .movie-detail-list{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                @media screen and (max-width:768px) {
+                    flex-direction: column;
+                    gap: 0;
+                }
+                li{
+                    width: 48%;
+                    margin-bottom: 36px;
+                    @media screen and (max-width:768px) {
+                        width:100%;
+                        margin-bottom: 24px;
+                    }
+                    span{
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                        margin-bottom: 8px;
+                        
+                    }
+                    img{
+                        border-radius: 8px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150%;
+                        margin:0;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .webtoons-detail-list{
+                margin-top: auto;
+                li{
+                    width: 100%;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            margin-bottom: 0;
+                        }
+                        @media screen and (max-width:768px) {
+                           flex-direction: column;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+    
+    .startxt{
+        margin-bottom: 27px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @media screen and (max-width:768px) {
+            margin-bottom: 22px;
+        }
+        .md-star{
+            display: flex;
+            gap: 7px;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+           
+        }
+        span{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            margin: 0;
+        }
+    }
+
+    
+}
+.tvshows-details-btm-sec{
+    padding-top: 80px;
+    @media screen and (max-width:768px){
+        padding-top: 48px;
+    }
+    .people-details-btm-otr{
+        .people-details-btm-left{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            h2{
+                width:100%;
+            }
+            .detailfigure{
+                width: 360px;
+                img{
+                    width: 100%;
+                }
+            }
+            .lists{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 88px;
+                
+                &.tab-scroll{
+                    overflow-x: auto;
+                    width: 100%;
+                    overflow-y: hidden;
+                }
+                @media screen and (max-width:768px){
+                    margin-bottom:56px;
+                }
+                
+                .outerside{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    grid-gap: 20px; 
+                    .list-content{ 
+                        width: 345px;
+                        .list-img{
+                            width: 345px;
+                            height: 230px;
+                            img{
+                                object-fit: cover;
+                                height: 100%;
+                                border-radius: 8px;
+                                width: 100%;
+                            }
+                        }
+                        span{
+                            font-weight: 800;
+                            font-size: 10px;
+                            line-height: 100%;
+                        }
+                        h3{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            padding: 4px 0;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        .news-date{
+                            padding: 10px 0px 0px;
+                            margin-top: 4px;
+                            p{
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+                .more-content{
+                    margin-left: auto;
+                    padding-left: 35px;
+                    min-width: 24px;
+                    min-height: 25px;
+                    display: inline-block;
+                }
+                .more-ct{
+                    margin-left: auto;
+                    padding: 0;
+                }
+                
+            }
+            .episode-heading{
+                margin-top: 80px;
+                margin-bottom:0;
+            }
+            .episode-list{
+               margin-top: 0;
+               margin-bottom:0;
+                h3{
+                    padding: 4px!important;
+                    margin-top:10px;
+                }
+                p{
+                    padding:4px;
+                }
+            }
+            .mr-bb2{
+                margin-top: 60px;
+                width: 100%;
+                @media screen and (max-width:1024px){
+                    margin-bottom: 48px;
+                }
+                @media screen and (max-width:768px){
+                    margin-top: 24px;
+                }
+            }
+            .detail-lst{
+                width: 725px;
+                @media screen and (max-width:1500px){
+                    width: 630px;
+                }
+                @media screen and (max-width:1024px){
+                    width: 100%;
+                }
+                li{
+                    margin-bottom: 28px;
+                    @media screen and (max-width:1024px){
+                        margin-bottom: 24px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    span{
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .work-otr {
+                .image-otr{
+                    //padding-bottom: 88px;
+                    align-items: flex-start;
+                    &.cast-crew{
+                        margin: 0;
+                    }
+                    &.col-5 {
+                        padding-bottom: 0;
+                        width: 100%;
+                        @media screen and (max-width: 991px){
+                            flex-wrap: nowrap;
+                        }
+                        .image-innr {
+                            width: calc(100% / 5);
+                            @media screen and (max-width: 1199px){
+                                width: calc(100% / 3);
+                            }
+                            @media screen and (max-width: 991px){
+                                width: 195px;
+                            }
+                        }
+                    }
+                    .image-innr{
+                        width: 17.666667%;
+                        @media screen and (max-width: 1199px){
+                            width:25%;
+                        }
+                        @media screen and (max-width:575px){
+                            width: 33.3333333333%;
+                        }
+                        
+                        @media screen and (max-width:575px){
+                            width:50%;
+                            a{
+                                width: 170px;
+                            }
+                        }
+                    }
+                    .more-content{
+                        margin-left:32px;
+                    }
+                }
+            }
+            .user-review-box{
+                ul {
+                    .user-comment-list {
+                        .user-review-icon{
+                            figure{
+                                img{
+                                    width: auto;
+                                }                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .people-details-btm-right{
+            .social-icon-list{
+                flex-direction:column;
+                @media screen and (max-width:768px){
+                    flex-direction:row;
+                    gap:10px;
+                }
+                li{
+                    margin-bottom:17px;
+                    @media screen and (max-width:768px){
+                        margin-bottom:0;
+                    }
+                    span{
+                        margin-bottom: 5px;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                    }
+                    a{
+                        border:none;
+                        // display: block;
+                        img{
+                            border-radius: 8px;
+                            filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+                        }
+                    }
+                }
+            }
+           
+        }
+        
+    }
+    .tabs-header{
+        @media screen and (max-width:768px){
+            width: 100%;
+        }        
+    }
+    .people-details-btm-otr{
+        @media screen and (max-width:768px){
+            padding: 0;
+        }
+    }
+}
+
+/* Start TvShowsDetailsEpisodes */
+.tvshow-episodes-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+    z-index:1;
+    padding: 30px 0;
+    @media screen and (max-width:768px){
+        padding: 24px 0;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .banner-content{
+        display:flex;
+        gap:40px;
+        @media screen and (max-width:768px){
+            gap: 16px;
+        }
+        figure{
+            width: 70px;
+            min-width: 70px;
+            height: 105px;
+            border-radius: 8px;
+            img{
+                border-radius: 8px;
+                height:100%;
+                object-fit: cover;
+            }
+        }   
+        .left-content{
+            display: flex;
+            flex-direction: column;
+            h3{
+                display:flex;
+                align-items:center;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 100%;
+                gap: 8px;
+                margin-bottom: 51px;
+                @media screen and (max-width:768px){
+                    flex-direction: column;
+                    align-items:flex-start;
+                    font-size: 24px;
+                    line-height: 130%;
+                    gap:0;
+                    margin-bottom: 24px;
+                }
+                span{
+                    padding:2px 16px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    border-radius: 20px;
+                    @media screen and (max-width:768px){
+                        margin-top:12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            a{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                display:flex;
+                align-items:center;
+                margin-top: auto;
+                img{
+                    margin-right: 4px;
+                    width: 20px;
+                    height: 20px;
+                    @media screen and (max-width:768px){
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                @media screen and (max-width:768px){
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+        }
+    }
+}
+.tvepisodes-btm{
+    padding: 80px 0 80px 0;
+    @media screen and (max-width:768px){
+        padding: 54px 0 48px 0;
+    }
+    .tvepisodes-content{
+        .top-head{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+            
+            h2{
+                margin-bottom: 0;
+                font-size: 30px;
+            }
+            a{
+                padding: 12px 24px;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+            }
+        }
+        .tv-lists{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+            @media screen and (max-width:768px){
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .tv-content{
+                margin-top: 20px;
+                padding-bottom: 30px;
+                display:flex;
+                gap:40px;
+                &:first-child{
+                    margin-top: 0px;
+                }
+                @media screen and (max-width:768px){
+                    padding-bottom: 16px;
+                    margin-top: 16px;
+                }
+                &.sm {
+                    @media screen and (max-width:768px){
+                        display: block;
+                    }
+                    figure{
+                        @media screen and (max-width:768px){
+                            width: 100%;
+                            margin-bottom: 8px;
+                            min-width: 100%;
+                            height: 191px;
+                        }
+                        img {
+                            width: 100%;
+                            @media screen and (max-width:768px){
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .left-content{
+                        width: 100%;
+                    }
+                }
+                @media screen and (max-width:768px){
+                    gap:8px;
+                }
+                figure{
+                    width: 286.5px;
+                    min-width:286.5px;
+                    height: 191px;
+                    border-radius: 8px;
+                    @media screen and (max-width:768px){
+                        width:100%
+                    }
+                    img{
+                        border-radius: 8px;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+                .left-content{
+                    .tv-heading{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items:center;
+                        margin-top: 4px;
+                        h3{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            width: 75%;
+                            // max-width: 1090px;
+                        }
+                        span{
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 150%;
+                        margin: 8px 0;
+                        height: 126px;
+                        overflow: hidden;
+                        word-break: break-word;
+                        &.show{
+                            height: 100%;
+                        }
+                        @media screen and (max-width:768px){
+                            height:84px;
+                        }
+                    }
+                    a{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-decoration: underline;
+                    }
+                    .show-less{
+                        display:none;
+                    }
+                    &.episode-more-description{
+                        p{
+                            height: auto;
+                        }
+                    }
+                }
+                &.active_episode{
+                    background: rgba(34, 34, 34, 0.5);
+                    padding: 20px;
+                    @media(max-width:767px){
+                        padding: 16px;
+                    }
+                }
+            }
+        }
+        .tab-outr{
+            .tabs-header{
+                li{
+                    font-weight: 600;
+                    &.active{
+                        font-weight: 700;
+                    }
+                }
+            }
+        } 
+    }
+}
+.tvimage-otr{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 20px;
+    gap:28px 20px;
+    @media screen and (max-width: 1600px){
+        gap:16px;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    @media screen and (max-width: 1024px){
+        grid-template-columns: auto auto auto auto;
+    }
+
+    @media screen and (max-width:767px){
+        grid-template-columns: auto auto;
+    }
+    .image-innr{
+        width: 172px;
+        @media screen and (max-width:768px){
+            width: 163.5px;
+        }
+        .hgt{
+            width: 172px;
+            height: 258px;
+            border-radius: 8px;
+            img{
+                height: 100%;
+                object-fit:cover;
+                border-radius: 8px;
+            }
+            @media screen and (max-width:768px){
+                width: 163.5px;
+                height: 250px;
+                
+            }
+        }
+        p{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            margin-top: 14px;
+            display: inline-block;
+    
+            @media screen and (max-width:768px){
+                margin-top: 6px;
+            }
+        }
+        .sub-para{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 4px;
+            width: 180px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            @media screen and (max-width:768px){
+                width: 160px;
+            }
+        }
+    }
+   
+}
+.a-lists{
+    .awards-lists{
+        padding:30px 0;
+        @media(max-width:767px){
+            padding: 16px 0;
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+        h2{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            width:100%;
+            margin-bottom: 20px;
+            @media screen and (max-width:768px) {
+                width: 229.5px;
+                font-size: 18px;
+                line-height: 160%;
+                order: 2;
+            }
+        }
+        .a-content{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            figure{
+                width: 170px;
+                min-width: 170px;
+                height: 255px;
+                margin-right:40px;
+                img{
+                    height:100%;
+                    object-fit:cover;
+                }
+                @media screen and (max-width:768px) {
+                    order: 1;
+                    width: 103.5px;
+                    min-width:103.5px;
+                    margin-right:10px;
+                    height: 161.42px;
+                }
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                width: 85%;
+                @media screen and (max-width:1024px){
+                    margin-top: 16px;
+                    width: 100%;
+                }
+             
+                @media screen and (max-width:768px) {
+                     order: 3;
+                     flex-direction: column;
+                     flex-wrap: initial;
+                     max-height: 380px;
+                     overflow: hidden;
+                }
+                li{
+                    margin-top:20px;
+                    width: 48%;
+                    &:nth-child(1){
+                        margin-top:0;
+                    }
+                    &:nth-child(2){
+                        margin-top:0;
+                    }
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                      
+                        &:nth-child(2){
+                            margin-top:20px;
+                        }
+                    }
+                    .label-txt{
+                        margin-bottom:8px;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 100%;
+                        display: flex;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150%;
+                        display: flex;
+                        gap:8px;
+                        span{
+                            padding: 6px 12px;
+                            display:flex;
+                            align-items:center;
+                            border-radius: 100px;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 100%;
+                           
+                            img{
+                                margin-right: 4.5px;
+                                width: 10px;
+                                height: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+            .show-more,.show-less{
+                display: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                @media screen and (max-width:768px) {
+                    order: 4;
+                    display: flex;
+                    
+                }
+            }
+            .show-less{
+                display:none;
+                @media screen and (max-width:768px) {
+                    display:none;
+                }
+            }
+        }
+     
+    }
+}
+
+/* End TvShowsDetailsEpisodes */
+
+.video-popular-sec {
+    padding: 100px 0 80px;
+    @media (max-width:767px) {
+        padding: 48px 0;
+    }
+    .video-popular-row{
+        .media-otr{
+            &.vd-popular{
+                @media(max-width:767px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.media-otr {
+    &.vd-popular {
+        .media-innr {
+            width: 100%;
+            max-width: 360px;
+            // width: calc(100% / 5);
+            // @media (max-width:1199px) {
+            //     width: calc(100% / 4);
+            // }
+            // @media (max-width:991px) {
+            //     width: calc(100% / 3);
+            // }
+            // @media (max-width:767px) {
+            //     width: calc(100% / 2);
+            // }
+            // @media (max-width:575px) {
+            //     width: 100%;
+            // }
+            .img {
+                height: 191px;
+                @media (max-width:575px) {
+                    height: 228px;
+                }
+            }
+            h6 {
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 2px;
+            }
+            ul {
+                border-top: 1px solid transparent;
+                margin-top: 16px;
+                padding-top: 12px;
+                display: flex;
+                align-items: center;
+                li {
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding-right: 8px;
+                    margin-right: 8px;
+                    list-style-type: disc;
+                    margin-left: 8px;
+                    &:last-child {
+                        padding-right: 0;
+                        margin-right: 0;
+                    }
+                    &:first-child {
+                        list-style-type: none;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.light-th {
+    display: none;
+}
+.theme-light {
+    .light-th {
+        display: block;
+    }
+    .dark-th {
+        display: none;
+    }
+    .select-style {
+        background-image: url(@/assets/icons/arrow-down2-blk.svg);
+    }
+    .dropdown-toggle {
+        background-image: url(@/assets/icons/down-arrow-black.svg);
+        &.contentactive {
+            background-image: url(@/assets/icons/up-arrow-blue.svg);
+        }
+    }
+    .cast-toggle {
+        background-image: url(@/assets/icons/down-arrow-black.svg);
+        &.dropdownshow {
+            background-image: url(@/assets/icons/up-arrow-blue.svg);
+        }
+    }
+    .webtoon-filter {
+        ul {
+            li {
+                .filter-toggle, select {
+                    background-image: url(@/assets/icons/down-arrow-black.svg);
+                }
+            }
+        }
+    }
+    .filter-drop-innr {
+        .filter-drop-left {
+            .select-fl-innr {
+                .select-style {
+                    background-image: url(@/assets/icons/down-arrow-black.svg);
+                }
+            }
+        }
+    }
+    .tvepisodes-btm{
+        .tvepisodes-content{
+            .tv-lists{
+                .tv-content{
+                    &.active_episode{
+                        background: rgba(34, 34, 34, 0.06);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tvepisodes-content{
+
+}
+
+
+// Episode add modal 
+
+.episode-modal-content{
+    position: relative;
+    width: 100%;
+
+    .img-upload-show{
+        position: relative;
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+        border-radius: 8px;
+        overflow: hidden;
+        // margin-bottom: 16px;
+
+        .image-preview{
+            position: relative;
+            width: 100%;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+        .upload-options{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+
+    .divRows {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        //margin-top: 16px;
+        h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+        .div1colmns {
+            display: flex;
+            //gap: 12px;
+            flex-direction: column;
+            .form-control {
+                height: 44px;
+                width: 100%;
+                padding: 16px;
+                background: transparent;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid #A4A4A4;
+                color: #000;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            select.form-control {
+                background: url(/src/assets/icons/arrow-down2-blk.svg) right 20px center no-repeat;
+
+                option{
+                    cursor: pointer;
+                }
+            }
+            textarea.form-control {
+                height: 202px;
+                color: #000;
+                margin-bottom: -6px;
+            }
+
+            .date-picker .dp__input{
+                border: 1px solid #A4A4A4;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+.tvepisodes-content{
+    .tab-outr{
+        .tabs-otr{
+            @media(max-width:767px){
+                overflow-y: hidden;
+                padding-bottom: 0;
+            }
+        }
+        
+        .tab-content{
+            @media(max-width:767px){
+                padding-top: 16px !important;
+            }
+            .tvimage-otr{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                margin-top: 0;
+                @media(max-width:1600px){
+                   gap: 0;
+                   margin: 0 -8px -16px;
+                }
+                .image-innr{
+                    @media(max-width:1600px){
+                        padding: 0 8px;
+                        margin-bottom: 16px;
+                        width: 12.5%;
+                    }
+                    @media(max-width:1600px){
+                        width: 14.28%;
+                    }
+                    @media(max-width:1200px){
+                        width: 16.66%;
+                    }
+                    @media(max-width:991px){
+                        width: 20%;
+                    }
+                    @media(max-width:767px){
+                        width: 25%;
+                    }
+                    @media(max-width:640px){
+                        width: 33.33%;
+                    }
+                    @media(max-width:480px){
+                        width: 50%;
+                    }
+                    .hgt{
+                        @media(max-width:1600px){
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                    .cast-crew-info{
+                        padding: 0 8px;
+                        @media(max-width:767px){
+                            padding: 0;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+   
+}
+
+.theme-light{
+    .tvshow-episodes-banner{
+        .banner-content {
+            .left-content{
+                a{
+                    color: #c7c7c7;
+                }
+            } 
+        }
+    } 
+   .tvepisodes-content{
+    .tabs-otr{
+        .tabs-header{
+            border-bottom-color: #c7c7c7;
+            li{
+                color: #9E9FA3;
+                &.active{
+                    color: #C32D2C;
+                }
+            }
+        }
+    }
+   }
+}
+
+.tvshows-details-sec{
+    padding-bottom: 110px;
+    @media(max-width:767px){
+        padding-bottom: 24px;
+    }
+}
+
+span.credit-people-id {
+    color: #3f6bf3 !important;
+}
